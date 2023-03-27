@@ -1,0 +1,6 @@
+let varA =12;
+let varB="String";
+let varC=true;
+let varD=undefined;
+let varE={school : "newton"};
+let varF=Symbol("foo");
