@@ -1,0 +1,19 @@
+//missing element
+#include <bits/stdc++.h> // header file includes every Standard library
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    long arr[n-1];
+    for(int i=0;i<n-1;i++){
+        cin>>arr[i];
+    }
+    int x=arr[0];
+    for(int i=1;i<n-1;i++){
+        x=x^arr[i];
+    }
+    int ans;
+    cout<<x;
+    return 0;
+}
