@@ -1,0 +1,28 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n=scanner.nextInt();
+        int m=scanner.nextInt();
+        int[][] results = new int[n][m];
+        for(int i=0; i<n;i++){
+            for(int j=0;j<m;j++){
+            results[i][j]=scanner.nextInt();
+        }
+    }
+    int maxMarks=0;
+    for (int i=0; i < n; i++){
+        int totalMarks =0;
+        for(int j=0; j<m; j++){
+            totalMarks += results[i][j]*10;
+            }
+            maxMarks=Math.max(maxMarks,totalMarks);
+        }
+    System.out.println(maxMarks);
+    scanner.close();
+}
+}
