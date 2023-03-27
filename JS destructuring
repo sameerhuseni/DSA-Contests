@@ -1,0 +1,5 @@
+function calculateMax(rohanInfo, gauriInfo) {
+    const {height:rohanHeight, weight: rohanWeight} = rohanInfo;
+    const {height:gauriHeight, weight: gauriWeight} = gauriInfo;
+    return[Math.max(rohanHeight, gauriHeight), Math.max(rohanWeight,gauriWeight)];
+  }
