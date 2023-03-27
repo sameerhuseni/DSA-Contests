@@ -1,0 +1,7 @@
+//Factorial Recursion Ye chutiya program koi deta hai kya
+static int Factorial(int N){
+//Enter your code her
+if(N==0)
+   return 1;
+   return N*Factorial(N-1);	
+}
