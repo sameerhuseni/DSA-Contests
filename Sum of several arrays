@@ -1,0 +1,11 @@
+function sum_array(arr) {
+// write code here
+// use console.log for displaying the output
+let sum=0;
+for(let ar of arr){
+    for(let a of ar){
+        sum+= a;
+    }
+}
+console.log(sum);
+}
