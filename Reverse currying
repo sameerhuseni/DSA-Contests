@@ -1,0 +1,10 @@
+function reverseWords(sen, word){
+    const newSen=`${sen} ${word}`;
+    function reverseFunc(){
+        const words=newSen.split(' ');
+        const reverseWords=words.reverse();
+        const reverseSentence=reverseWords.join(' ');
+        return reverseSentence;
+    }
+    return reverseFunc;
+}
