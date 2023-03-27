@@ -1,0 +1,28 @@
+//XOR
+#include <bits/stdc++.h> // header file includes every Standard library
+#define Raftaar main
+#define int long long
+using namespace std;
+
+int32_t Raftaar() {
+
+	// Your code here
+    int a, T;
+    cin>>T;
+    while(T-->0){
+        int ans=1;
+        cin>>a;
+        int di=0;
+        while(a){
+            if(a&1){
+                a/=2;
+                di++;
+            }
+            else{
+                a/=2;
+            }
+        }
+        ans = pow(2, di);
+        cout<<ans<<endl;
+    }
+}
