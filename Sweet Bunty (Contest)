@@ -1,0 +1,22 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+    public static int square(int sweet,int base){
+        base=base-2;
+        base=Math.floorDiv(base,2);
+        int max=base*(base+1)/2;
+        if(max>sweet)
+        return sweet;
+        else
+        return max;
+    }
+    public static void main (String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int sweet=sc.nextInt();
+        int base=sc.nextInt();
+        System.out.print(square(sweet,base));
+    }
+}
