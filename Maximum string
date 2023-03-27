@@ -1,0 +1,28 @@
+#include <bits/stdc++.h> // header file includes every Standard library
+using namespace std;
+string largestString(string num,int k){
+    string res="";
+    if(num.length()<k){
+        return num;
+    }
+    for(auto i:num){
+        while(res.length()>0 &&res.back()<i &&k>0){
+            res.pop_back();
+            k--;
+        }
+        res.push_back(i);
+    }
+    while(res.length()>0 &&k-->0){
+        res.pop_back();
+    }
+    return res;
+}
+int main() {
+	// Your code here
+    string s;
+    int k;
+    cin>>s;
+    cin>>k;
+    cout<<largestString(s,k);
+    return 0;
+}
